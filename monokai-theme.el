@@ -51,7 +51,11 @@
    `(minibuffer-prompt ((t (:foreground ,monokai-blue-light))))
    `(modeline ((t (:background ,monokai-gray-lightest :foreground ,monokai-gray-light))))
    `(region ((t (:background ,monokai-gray-darker))))
+   `(fringe ((t (:background ,monokai-grey-dark))))
    `(show-paren-match-face ((t (:background ,monokai-gray-lightest))))
+   `(scroll-bar ((t (:foreground ,monokai-gray-light :background ,monokai-grey-dark))))
+   `(popup-scroll-bar-background-face ((t (:background ,monokai-grey-dark))))
+   `(popup-scroll-bar-foreground-face ((t (:foreground ,monokai-gray-light))))
    `(link ((t (:foreground ,monokai-blue-light :underline t))))
    `(link-visited ((t (:foreground ,monokai-blue-light :underline t :slant italic))))
    ;; Main
@@ -73,6 +77,24 @@
    `(ido-subdir ((t (:foreground ,monokai-blue-light))))
    ;; ECB
    `(ecb-default-highlight-face ((t (:foreground ,monokai-green))))
+   ;; tuareg
+   `(tuareg-font-lock-governing-face ((t (:foreground ,monokai-magenta))))
+   `(tuareg-font-lock-operator-face ((t (:foreground ,monokai-gray-light))))
+   ;; helm
+   `(helm-source-header ((t (:foreground ,monokai-purple :background ,monokai-gray-darkest :height 1.2))))
+   `(helm-visible-mark ((t (nil))))
+   `(helm-header ((t (nil))))
+   `(helm-candidate-number ((t (:underline t :foreground ,monokai-purple :background nil))))
+   `(helm-selection ((t (:foreground ,monokai-green :background ,monokai-gray-darker))))
+   `(helm-separator ((t (:background ,monokai-gray-darkest))))
+   `(helm-action ((t (nil))))
+   ;; helm find file
+   `(helm-ff-prefix ((t (nil))))
+   `(helm-ff-executable ((t (:foreground ,monokai-magenta))))
+   `(helm-ff-directory ((t (:foreground ,monokai-blue-light :background nil))))
+   `(helm-ff-symlink ((t (:foreground ,monokai-purple-light))))
+   `(helm-ff-invalid-symlink ((t (:foreground nil :background ,monokai-yellow))))
+   `(helm-ff-file ((t (:inherit default))))
    ;; Whitespace
    `(whitespace-space ((t (:foreground ,monokai-gray))))
    `(trailing-whitespace ((t (:foreground ,monokai-purple-light))))
@@ -82,7 +104,9 @@
    `(tooltip ((t (:background ,monokai-yellow-light :foreground ,monokai-yellow-dark))))))
 
 ;;;###autoload
-(when load-file-name
+(when (and (boundp 'custom-theme-load-path)
+           load-file-name)
+  ;; add theme folder to `custom-theme-load-path' when installing over MELPA
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
