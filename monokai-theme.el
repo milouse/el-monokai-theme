@@ -66,7 +66,9 @@
    ;; Main
    `(font-lock-builtin-face ((t (:foreground ,monokai-purple))))
    `(font-lock-comment-face ((t (:foreground ,monokai-yellow-dark))))
+   `(font-lock-comment-delimiter-face ((t (:foreground ,monokai-yellow-dark))))
    `(font-lock-constant-face ((t (:foreground ,monokai-green-light))))
+   `(font-lock-doc-face ((t (:foreground ,monokai-yellow))))
    `(font-lock-doc-string-face ((t (:foreground ,monokai-yellow))))
    `(font-lock-function-name-face ((t (:foreground ,monokai-green-light))))
    `(font-lock-keyword-face ((t (:foreground ,monokai-magenta))))
@@ -74,6 +76,7 @@
    `(font-lock-type-face ((t (:foreground ,monokai-blue-light :slant italic))))
    `(font-lock-variable-name-face ((t (:foreground ,monokai-orange))))
    `(font-lock-warning-face ((t (:foreground ,monokai-purple-light :weight bold))))
+   `(font-lock-preprocessor-face ((t (:foreground ,monokai-green-light))))
    ;; CUA
    `(cua-rectangle ((t (:background ,monokai-gray-darkest))))
    ;; IDO
@@ -112,6 +115,16 @@
    `(jabber-title-medium ((t (:inherit variable-pitch
                                        :weight bold :height 1.5
                                        :width expanded))))
+   ;; Message (used by mu4e too)
+   `(message-header-name ((t (:foreground ,monokai-green :weight bold))))
+   `(mu4e-header-marks-face ((t (:foreground ,monokai-purple-light :weight bold))))
+   `(message-header-to ((t (:foreground ,monokai-orange))))
+   `(message-header-cc ((t (:foreground ,monokai-orange))))
+   `(message-header-subject ((t (:foreground ,monokai-yellow))))
+   `(message-header-newsgroups ((t (:foreground ,monokai-yellow))))
+   `(message-header-other ((t (:foreground ,monokai-yellow))))
+   `(message-header-xheader ((t (:foreground ,monokai-yellow))))
+   `(message-separator ((t (:foreground ,monokai-blue-light))))
    ;; Whitespace
    `(whitespace-space ((t (:foreground ,monokai-gray))))
    `(trailing-whitespace ((t (:foreground ,monokai-purple-light))))
