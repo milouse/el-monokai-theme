@@ -73,7 +73,7 @@
    `(font-lock-string-face ((t (:foreground ,monokai-yellow))))
    `(font-lock-type-face ((t (:foreground ,monokai-blue-light :slant italic))))
    `(font-lock-variable-name-face ((t (:foreground ,monokai-orange))))
-   `(font-lock-warning-face ((t (:bold t :foreground ,monokai-purple-light))))
+   `(font-lock-warning-face ((t (:foreground ,monokai-purple-light :weight bold))))
    ;; CUA
    `(cua-rectangle ((t (:background ,monokai-gray-darkest))))
    ;; IDO
