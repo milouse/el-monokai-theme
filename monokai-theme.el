@@ -117,7 +117,7 @@
                                        :width expanded))))
    ;; Message (used by mu4e too)
    `(message-header-name ((t (:foreground ,monokai-green :weight bold))))
-   `(mu4e-header-marks-face ((t (:foreground ,monokai-purple-light :weight bold))))
+   `(mu4e-header-marks-face ((t (:foreground ,monokai-green :weight bold))))
    `(message-header-to ((t (:foreground ,monokai-orange))))
    `(message-header-cc ((t (:foreground ,monokai-orange))))
    `(message-header-subject ((t (:foreground ,monokai-yellow))))
