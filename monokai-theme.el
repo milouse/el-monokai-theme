@@ -36,8 +36,8 @@
       (monokai-gray-darkest "#141411")
       (monokai-gray-lightest "#595959")
       (monokai-gray-light "#E6E6E6")
-      (monokai-green "#A6E22A")
-      (monokai-green-light "#A6E22E")
+      (monokai-green "#68F922")
+      (monokai-green-light "#A6E22A")
       (monokai-magenta "#F92672")
       (monokai-purple "#AE81FF")
       (monokai-purple-light "#FD5FF1")
@@ -66,9 +66,9 @@
    ;; Main
    `(font-lock-builtin-face ((t (:foreground ,monokai-purple))))
    `(font-lock-comment-face ((t (:foreground ,monokai-yellow-dark))))
-   `(font-lock-constant-face ((t (:foreground ,monokai-green))))
+   `(font-lock-constant-face ((t (:foreground ,monokai-green-light))))
    `(font-lock-doc-string-face ((t (:foreground ,monokai-yellow))))
-   `(font-lock-function-name-face ((t (:foreground ,monokai-green))))
+   `(font-lock-function-name-face ((t (:foreground ,monokai-green-light))))
    `(font-lock-keyword-face ((t (:foreground ,monokai-magenta))))
    `(font-lock-string-face ((t (:foreground ,monokai-yellow))))
    `(font-lock-type-face ((t (:foreground ,monokai-blue-light :slant italic))))
@@ -78,10 +78,10 @@
    `(cua-rectangle ((t (:background ,monokai-gray-darkest))))
    ;; IDO
    `(ido-first-match ((t (:foreground ,monokai-purple))))
-   `(ido-only-match ((t (:foreground ,monokai-green))))
+   `(ido-only-match ((t (:foreground ,monokai-green-light))))
    `(ido-subdir ((t (:foreground ,monokai-blue-light))))
    ;; ECB
-   `(ecb-default-highlight-face ((t (:foreground ,monokai-green))))
+   `(ecb-default-highlight-face ((t (:foreground ,monokai-green-light))))
    ;; tuareg
    `(tuareg-font-lock-governing-face ((t (:foreground ,monokai-magenta))))
    `(tuareg-font-lock-operator-face ((t (:foreground ,monokai-gray-light))))
@@ -90,7 +90,7 @@
    `(helm-visible-mark ((t (nil))))
    `(helm-header ((t (nil))))
    `(helm-candidate-number ((t (:underline t :foreground ,monokai-purple :background nil))))
-   `(helm-selection ((t (:foreground ,monokai-green :background ,monokai-gray-darker))))
+   `(helm-selection ((t (:foreground ,monokai-green-light :background ,monokai-gray-darker))))
    `(helm-separator ((t (:background ,monokai-gray-darkest))))
    `(helm-action ((t (nil))))
    ;; helm find file
@@ -104,7 +104,7 @@
    `(jabber-activity-personal-face ((t (:foreground ,monokai-blue-light :weight bold))))
    `(jabber-chat-prompt-local ((t (:foreground ,monokai-blue-light :weight bold))))
    `(jabber-roster-user-away ((t (:foreground ,monokai-gray-dark :slant italic))))
-   `(jabber-roster-user-chatty ((t (:foreground ,monokai-green :weight bold))))
+   `(jabber-roster-user-chatty ((t (:foreground ,monokai-green-light :weight bold))))
    `(jabber-roster-user-online ((t (:foreground ,monokai-blue-light :slant normal))))
    `(jabber-title-large ((t (:inherit variable-pitch
                                       :weight bold :height 2.0
