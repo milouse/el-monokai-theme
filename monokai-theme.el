@@ -31,13 +31,13 @@
 
 (let ((monokai-blue-light "#89BDFF")
       (monokai-gray "#595959")
+      (monokai-gray-dark "#272822")
       (monokai-gray-darker "#383830")
       (monokai-gray-darkest "#141411")
       (monokai-gray-lightest "#595959")
       (monokai-gray-light "#E6E6E6")
       (monokai-green "#A6E22A")
       (monokai-green-light "#A6E22E")
-      (monokai-grey-dark "#272822")
       (monokai-magenta "#F92672")
       (monokai-purple "#AE81FF")
       (monokai-purple-light "#FD5FF1")
@@ -48,7 +48,7 @@
   (custom-theme-set-faces
    'monokai
    ;; Frame
-   `(default ((t (:foreground ,monokai-yellow-light :background ,monokai-grey-dark))))
+   `(default ((t (:foreground ,monokai-yellow-light :background ,monokai-gray-dark))))
    `(cursor ((t (:background ,monokai-yellow-light :foreground ,monokai-magenta :inverse-video t))))
    `(mouse ((t (:background ,monokai-yellow-light :foreground ,monokai-magenta :inverse-video t))))
    `(hl-line ((t (:background ,monokai-gray-darkest))))
@@ -56,10 +56,10 @@
    `(minibuffer-prompt ((t (:foreground ,monokai-blue-light))))
    `(modeline ((t (:background ,monokai-gray-lightest :foreground ,monokai-gray-light))))
    `(region ((t (:background ,monokai-gray-darker))))
-   `(fringe ((t (:background ,monokai-grey-dark))))
+   `(fringe ((t (:background ,monokai-gray-dark))))
    `(show-paren-match-face ((t (:background ,monokai-gray-lightest))))
-   `(scroll-bar ((t (:foreground ,monokai-gray-light :background ,monokai-grey-dark))))
-   `(popup-scroll-bar-background-face ((t (:background ,monokai-grey-dark))))
+   `(scroll-bar ((t (:foreground ,monokai-gray-light :background ,monokai-gray-dark))))
+   `(popup-scroll-bar-background-face ((t (:background ,monokai-gray-dark))))
    `(popup-scroll-bar-foreground-face ((t (:foreground ,monokai-gray-light))))
    `(link ((t (:foreground ,monokai-blue-light :underline t))))
    `(link-visited ((t (:foreground ,monokai-blue-light :underline t :slant italic))))
