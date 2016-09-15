@@ -100,6 +100,18 @@
    `(helm-ff-symlink ((t (:foreground ,monokai-purple-light))))
    `(helm-ff-invalid-symlink ((t (:foreground nil :background ,monokai-yellow))))
    `(helm-ff-file ((t (:inherit default))))
+   ;; Jabber
+   `(jabber-activity-personal-face ((t (:foreground ,monokai-blue-light :weight bold))))
+   `(jabber-chat-prompt-local ((t (:foreground ,monokai-blue-light :weight bold))))
+   `(jabber-roster-user-away ((t (:foreground ,monokai-gray-dark :slant italic))))
+   `(jabber-roster-user-chatty ((t (:foreground ,monokai-green :weight bold))))
+   `(jabber-roster-user-online ((t (:foreground ,monokai-blue-light :slant normal))))
+   `(jabber-title-large ((t (:inherit variable-pitch
+                                      :weight bold :height 2.0
+                                      :width ultra-expanded))))
+   `(jabber-title-medium ((t (:inherit variable-pitch
+                                       :weight bold :height 1.5
+                                       :width expanded))))
    ;; Whitespace
    `(whitespace-space ((t (:foreground ,monokai-gray))))
    `(trailing-whitespace ((t (:foreground ,monokai-purple-light))))
