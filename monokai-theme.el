@@ -67,7 +67,7 @@
    `(font-lock-builtin-face ((t (:foreground ,monokai-purple))))
    `(font-lock-comment-face ((t (:foreground ,monokai-yellow-dark))))
    `(font-lock-comment-delimiter-face ((t (:foreground ,monokai-yellow-dark))))
-   `(font-lock-constant-face ((t (:foreground ,monokai-green-light))))
+   `(font-lock-constant-face ((t (:foreground ,monokai-green-light :slant italic))))
    `(font-lock-doc-face ((t (:foreground ,monokai-yellow))))
    `(font-lock-doc-string-face ((t (:foreground ,monokai-yellow))))
    `(font-lock-function-name-face ((t (:foreground ,monokai-green-light))))
