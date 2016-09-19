@@ -130,6 +130,13 @@
    `(trailing-whitespace ((t (:foreground ,monokai-purple-light))))
    ;; Yasnippet
    `(yas/field-highlight-face ((t (:background ,monokai-gray-darker))))
+   ;; Web-mode
+   `(web-mode-block-delimiter-face ((t (:foreground ,monokai-purple))))
+   `(web-mode-symbol-face ((t (:foreground ,monokai-green-light :slant italic))))
+   `(web-mode-block-attr-name-face ((t (:foreground ,monokai-green-light))))
+   `(web-mode-block-attr-value-face ((t (:foreground ,monokai-blue-light))))
+   `(web-mode-json-key-face ((t (:foreground ,monokai-green-light :slant italic))))
+   `(web-mode-json-context-face ((t (:foreground ,monokai-orange))))
    ;; zencoding uses this
    `(tooltip ((t (:background ,monokai-yellow-light :foreground ,monokai-yellow-dark))))))
 
